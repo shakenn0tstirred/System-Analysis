@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace Translation_DS
+{
+    public partial class translationForm : Form
+    {
+        public translationForm()
+        {
+            InitializeComponent();
+        }
+
+        private void YesterdayButton_Click(object sender, EventArgs e)
+        {
+            // When clicked, the 'Ayer' button will change the translationLabel to "Yesterday".
+            translationLabel.Text = "Yesterday";
+        }
+
+        private void TodayButton_Click(object sender, EventArgs e)
+        {
+            // When clicked, the 'Hoy' button will change the translationLabel to "Today".
+            translationLabel.Text = "Today";
+        }
+
+        private void TomorrowButton_Click(object sender, EventArgs e)
+        {
+            // When clicked, the 'Mañana' button will change the translationLabel to "Tomorrow".
+            translationLabel.Text = "Tomorrow";
+        }
+    }
+} 
